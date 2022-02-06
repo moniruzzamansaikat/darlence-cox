@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Girl Portfolio Website</title>
+    <title>Darlence Cox</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -14,6 +18,18 @@
       <a href="#" class="navbar-brand logo">
         <span>D</span>
       </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
 
       <div class="container ms-0">
         <div class="collapse navbar-collapse" id="mainNav">
@@ -88,25 +104,41 @@
       <!-- featured -->
       <section class="featured">
         <h3 class="title">Portfolio</h3>
-        <div class="d-flex justify-content-between align-items-center">
-          <h1>Featured</h1>
-          <ul class="nav featured-link">
-            <li class="nav-item">
-              <a href="#" class="nav-link active">Featured</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">User Interface</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Web Design</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Branding</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Graphic Design</a>
-            </li>
-          </ul>
+        <div>
+          <nav class="navbar navbar-expand-md">
+            <h1>Featured</h1>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#featuredLinks"
+              aria-controls="featuredLinks"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="featuredLinks">
+              <ul class="nav navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active">Featured</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">User Interface</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Web Design</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Branding</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
 
         <div class="mt-4 grid">
@@ -124,46 +156,64 @@
       <!-- Articles -->
       <section class="article my-5">
         <h2 class="title">Blog</h2>
-        <h1 class="">Recent Articles</h1>
+        <h1>Recent Articles</h1>
 
         <div class="articles mt-5">
           <article>
-            <div class="content">
-              <p>12.02.2021</p>
-              <h2>7 Principles of Effective Icon Design</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus non atque vitae a debitis mollitia quas ipsam
-                voluptates ab optio esse ratione libero nihil aperiam molestiae
-                amet, natus odit. Quidem veniam labore ullam provident
-                voluptatum soluta dolorum in ut eum consectetur tempora nostrum
-                impedit architecto minus accusantium cupiditate, praesentium
-                nulla fugit dicta, enim, possimus repellendus vero aut.
-              </p>
-              <a href="#" class="nav-link text-warning p-0">Read More</a>
-            </div>
-            <div class="image">
-              <img src="./img/article-1.jpg" alt="" class="img-fluid" />
+            <div class="row">
+              <div class="col-md-6">
+                <div class="content">
+                  <p>12.02.2021</p>
+                  <h2>7 Principles of Effective Icon Design</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus non atque vitae a debitis mollitia quas ipsam
+                    voluptates ab optio esse ratione libero nihil aperiam
+                    molestiae amet, natus odit. Quidem veniam labore ullam
+                    provident voluptatum soluta dolorum in ut eum consectetur
+                    tempora nostrum impedit architecto minus accusantium
+                    cupiditate, praesentium nulla fugit dicta, enim, possimus
+                    repellendus vero aut.
+                  </p>
+                  <a href="#" class="nav-link text-warning p-0">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-6 order-first order-md-last">
+                <div class="image mb-3">
+                  <img
+                    src="./img/article-1.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
             </div>
           </article>
 
           <article>
-            <div class="content">
-              <p>12.02.2021</p>
-              <h2>7 Principles of Effective Icon Design</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Possimus non atque vitae a debitis mollitia quas ipsam
-                voluptates ab optio esse ratione libero nihil aperiam molestiae
-                amet, natus odit. Quidem veniam labore ullam provident
-                voluptatum soluta dolorum in ut eum consectetur tempora nostrum
-                impedit architecto minus accusantium cupiditate, praesentium
-                nulla fugit dicta, enim, possimus repellendus vero aut.
-              </p>
-              <a href="#" class="nav-link text-warning p-0">Read More</a>
-            </div>
-            <div class="image">
-              <img src="./img/article-2.jpg" alt="" class="img-fluid" />
+            <div class="row">
+              <div class="col-md-6">
+                <div class="content">
+                  <p>12.02.2021</p>
+                  <h2>7 Principles of Effective Icon Design</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus non atque vitae a debitis mollitia quas ipsam
+                    voluptates ab optio esse ratione libero nihil aperiam
+                    molestiae amet, natus odit. Quidem veniam labore ullam
+                    provident voluptatum soluta dolorum in ut eum consectetur
+                    tempora nostrum impedit architecto minus accusantium
+                    cupiditate, praesentium nulla fugit dicta, enim, possimus
+                    repellendus vero aut.
+                  </p>
+                  <a href="#" class="nav-link text-warning p-0">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-6 order-first">
+                <div class="image mb-3">
+                  <img src="./img/article-2.jpg" alt="" class="img-fluid" />
+                </div>
+              </div>
             </div>
           </article>
         </div>
@@ -186,7 +236,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col col-md-6">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="full_name">Full Name <span>*</span></label>
                 <input
@@ -196,6 +246,8 @@
                   placeholder="Enter Full Name"
                 />
               </div>
+            </div>
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="email_address">Email Address <span>*</span></label>
                 <input
@@ -205,6 +257,10 @@
                   placeholder="Enter Email Address"
                 />
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="project_type">Project Type <span>*</span></label>
                 <select name="#" id="project_type" class="form-control">
@@ -217,7 +273,8 @@
                 <button type="submit" class="btn btn-primary">Send</button>
               </div>
             </div>
-            <div class="col col-md-6">
+
+            <div class="col col-md-6 order-first order-md-last">
               <div class="form-group">
                 <label for="message">Quick Message</label>
                 <textarea
@@ -234,5 +291,7 @@
       </section>
       <!-- end of Contact -->
     </div>
+
+    <script src="./js/bootstrap.bundle.js"></script>
   </body>
 </html>
